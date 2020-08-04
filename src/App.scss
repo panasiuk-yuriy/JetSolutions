@@ -1,0 +1,45 @@
+@import './styles/mixin.scss';
+@import './styles/variables.scss';
+
+.tiles {
+  margin-top: 50px;
+  @include flex-center;
+  padding: 0 10px;
+  
+  &__container {
+    --tile-width: 90px;
+    padding: 5px;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, var(--tile-width));
+    grid-template-rows: repeat(4, var(--tile-width));
+    box-shadow: $box-shadow;
+    background-color: $color-grey;
+
+    @media screen and (max-width: 600px){
+      --tile-width: 60px;
+    }
+  }
+
+  &__score {
+    @include flex-center;
+    margin: 0 0 50px;
+    border-radius: 10px;
+    padding: 15px; 
+    background-color: $color-grey;
+    box-shadow: $box-shadow;
+  }
+
+  &__score--title {
+    color: rgb(65, 65, 65);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__couter {
+    color: rgb(65, 65, 65);
+    font-size: 32px;
+    font-weight: bold;
+  }
+}

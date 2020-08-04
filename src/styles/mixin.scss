@@ -1,0 +1,12 @@
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin tile { 
+  border-radius: 5px;
+  background-color: rgb(201, 201, 201);
+  transition: background-color 0.4s ease-in-out;
+  cursor: pointer; 
+}
