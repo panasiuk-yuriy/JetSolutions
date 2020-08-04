@@ -31,7 +31,7 @@ const reducer = (state = tiles, action: AnyAction) => {
     })
 
     case RESTART_GAME:
-    return state.map(tile => {
+    return state.sort(() => Math.random() - 0.5).map(tile => {
       return {...tile, isOpen: false, nowOpen: false}
     })
     
