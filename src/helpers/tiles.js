@@ -1,4 +1,4 @@
-export const tiles: Tile[] = [
+export const tiles = [
   {
     id: 1,
     color: 'green',
