@@ -1,7 +1,5 @@
 [DEMO](http://panasiuk-yuriy.github.io/JetSolutions)
 
-Test task for front-end developer vacancy
-
 Description: 
 The page consists of a board of tiles (default 4x4). 
 - every 2 tiles have the same color (it could be an image, it doesn't matter); 
